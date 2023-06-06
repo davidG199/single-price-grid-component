@@ -1,0 +1,87 @@
+:root{
+    /* colores primarios */
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright_Yellow: hsl(71, 73%, 54%);
+    /* colores neutros */
+    --Light_Gray: hsl(204, 43%, 93%);
+    --Grayish_Blue: hsl(218, 22%, 67%);
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Karla', sans-serif;
+    margin: 20px 20px;
+    padding: 0;
+    background-color: var(--Light_Gray);
+}
+
+/* .row {
+    height: 250px;
+    width: 700px;
+} */
+ .container {
+    width: 670px;
+ }
+
+
+.p-gris{
+    color: var(--Grayish_Blue);
+}
+
+/* estilos para la primera fila */
+.p-col {
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+}
+.p-col .h4{
+    color: var(--Cyan);
+}
+.p-col p:nth-child(2){
+    color: var(--Bright_Yellow);
+    font-size: 1.1rem;
+}
+/* estilos para la segunda fila y la primera columna */
+.s-col{
+    background-color: var(--Cyan);
+    border-bottom-left-radius: 10px;
+}
+
+.s-col .d-flex span{
+    font-size: 2.2rem;
+}
+/* estilos para la segunda fila y la segunda columna */
+.t-col{
+    background-color: hsl(179, 50%, 50%);
+    border-bottom-right-radius: 10px;
+}
+
+/* estilos para el boton */
+
+.btn {
+    background-color: var(--Bright_Yellow);
+    height: 3.125rem;
+}
+
+@media (max-width: 375px) {
+    /* .row{
+        width: 320px;
+        height: 270px;
+    } */
+    .t-col{
+        border-bottom-left-radius: 10px;
+        /* height: 240px; */
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 575px){
+    .s-col {
+        border-radius: 0;
+    }
+    .container {
+        width: 95%;
+    }
+}

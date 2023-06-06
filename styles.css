@@ -23,7 +23,7 @@ body{
     width: 700px;
 } */
  .container {
-    width: 670px;
+    width: 41.875rem;
  }
 
 
@@ -34,7 +34,7 @@ body{
 /* estilos para la primera fila */
 .p-col {
     background-color: white;
-    border-radius: 10px 10px 0 0;
+    border-radius: .625rem .625rem 0 0;
 }
 .p-col .h4{
     color: var(--Cyan);
@@ -46,7 +46,7 @@ body{
 /* estilos para la segunda fila y la primera columna */
 .s-col{
     background-color: var(--Cyan);
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: .625rem;
 }
 
 .s-col .d-flex span{
@@ -55,7 +55,7 @@ body{
 /* estilos para la segunda fila y la segunda columna */
 .t-col{
     background-color: hsl(179, 50%, 50%);
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: .625rem;
 }
 
 /* estilos para el boton */
@@ -65,19 +65,19 @@ body{
     height: 3.125rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 23.4375rem) {
     /* .row{
         width: 320px;
         height: 270px;
     } */
     .t-col{
-        border-bottom-left-radius: 10px;
+        border-bottom-left-radius: .625rem;
         /* height: 240px; */
-        font-size: 15px;
+        font-size: .9375rem;
     }
 }
 
-@media (max-width: 575px){
+@media (max-width: 35.9375rem){
     .s-col {
         border-radius: 0;
     }
